@@ -17,6 +17,9 @@ function shuffle(array){
     }
 }
 
+
+
+const rowcount = 5
 let solved = false
 let board = []
 async function categorielist(len) {
@@ -93,7 +96,7 @@ function retry(){
     solved = false
     board = []
     currentlySelected = {num: null, column: null}
-    main(5)
+    main(rowcount)
 }
 
 async function main(emojicount) {
@@ -135,4 +138,4 @@ async function main(emojicount) {
     root.hidden = false
 }
 
-main(5)
+main(rowcount)
