@@ -109,9 +109,13 @@ async function main(emojicount) {
     for (let i = 0; i < emojicount; i++) {
         pairs.push({
             location: `${i}-options`,
-            emoji: await getch(`https://emojihub.yurace.pro/api/random/category/${categories[i]}`),
-            pair: await getch(`https://emojihub.yurace.pro/api/random/category/${categories[i]}`)
+            emoji: getch(`https://emojihub.yurace.pro/api/random/category/${categories[i]}`),
+            pair: getch(`https://emojihub.yurace.pro/api/random/category/${categories[i]}`)
         })
+    }
+    for (let i = 0; i < emojicount; i++) {
+        pairs[i].emoji = await pairs[i].emoji
+        pairs[i].pair = await pairs[i].pair
     }
     solution = pairs.map((x) => x.pair.htmlCode[0])
     let originalpairs = pairs.map((x) => x)
