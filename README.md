@@ -1,1 +1,1 @@
-url: [[https://szupertntakos.github.io/Matchmoji/]]
+url: https://szupertntakos.github.io/Matchmoji/
