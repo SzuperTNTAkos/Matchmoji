@@ -1,5 +1,14 @@
+#buttons {
+    display: flex;
+    justify-content: center;
+    button{
+        border: 2px solid black;
+    }   
+}
+
 #emojis {
     display: flex;
+    justify-content: center;
 }
 
 #primary-list {
@@ -8,6 +17,7 @@
 
 *{
     font-size: xx-large;
+    background-color: darkslategray;
 }
 
 ul {
